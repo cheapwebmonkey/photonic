@@ -1,0 +1,41 @@
+{
+  "name": "photonic",
+  "version": "1.0.0",
+  "description": "Website for Photonic- Digital so fresh it bleeds",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --sourceMap=true --include-path scss  assets/sass/main.scss  assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-js": "uglifyjs  assets/js/main.js -o assets/js/main.min.js",
+    "watch-js": "nodemon --watch js/main.js  -x \"npm run build-js\"",
+    "watch": "npm run watch-css & npm run watch-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheapwebmonkey/photonic.git"
+  },
+  "keywords": [
+    "website",
+    "web",
+    "dev",
+    "web",
+    "design",
+    "marketing",
+    "agency",
+    "small",
+    "business",
+    "websites",
+    "website",
+    "contractors"
+  ],
+  "author": "cheapwebmonkey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cheapwebmonkey/photonic/issues"
+  },
+  "homepage": "https://github.com/cheapwebmonkey/photonic#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
